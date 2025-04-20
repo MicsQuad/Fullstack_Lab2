@@ -7,19 +7,19 @@ const app = express();
 const PORT = 5000;
 
 app.use(cors());
-const assignmentRoutes = require('./routes/projectAssignments');
-app.use('/api/project_assignments', assignmentRoutes);
-
 app.use(express.json());
 
+// MongoDB connection
 mongoose.connect(process.env.MONGO_URI, {
   useNewUrlParser: true,
   useUnifiedTopology: true
-}).then(() => {
-  console.log('Connected to MongoDB');
-}).catch((err) => {
-  console.error('MongoDB connection error:', err);
-});
+}).then(() => console.log('Connected to MongoDB'))
+  .catch(err => console.error('MongoDB connection error:', err));
+
+// Routes
+app.use('/api/employees', require('./routes/employees'));
+app.use('/api/projects', require('./routes/projects'));
+app.use('/api/project_assignments', require('./routes/projectAssignments'));
 
 app.get('/', (req, res) => res.send('Server is up!'));
 
