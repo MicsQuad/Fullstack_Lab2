@@ -7,6 +7,9 @@ const app = express();
 const PORT = 5000;
 
 app.use(cors());
+const assignmentRoutes = require('./routes/projectAssignments');
+app.use('/api/project_assignments', assignmentRoutes);
+
 app.use(express.json());
 
 mongoose.connect(process.env.MONGO_URI, {
