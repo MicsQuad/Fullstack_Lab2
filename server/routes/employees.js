@@ -2,7 +2,12 @@ const express = require('express');
 const router = express.Router();
 const Employee = require('../models/Employee');
 
-// POST: Create a new employee
+// TEMP test route
+router.get('/', (req, res) => {
+  res.send('Employees route working ✅');
+});
+
+// Your POST route (keep this too)
 router.post('/', async (req, res) => {
   try {
     const { employee_id, full_name, email, hashed_password } = req.body;
