@@ -1,4 +1,4 @@
-# 📚 Lab 2: Fullstack Assignment Tracker
+# 📚 Lab 2: Fullstack Assignment
 
 A modern fullstack application built using:
 - 💻 React + Vite for the frontend
