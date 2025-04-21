@@ -79,7 +79,7 @@ MONGO_URI=mongodb+srv://<your_credentials>@<your_cluster>/<your_db>
 
 ## 💡 Reflection
 
-> Throughout Lab 2, I gained practical experience building a fullstack app using React, Express.js, and MongoDB Atlas. 
+Throughout Lab 2, I gained practical experience building a fullstack app using React, Express.js, and MongoDB Atlas. 
 While the final result is a smooth, data-driven interface, the process involved debugging across all layers of the stack.
     Early challenges included configuring the development scripts and environment variables.
 The backend initially failed to read the MongoDB URI from .env, and my routes returned 404s due to misconfigurations. These were resolved by inspecting logs, confirming file structure, and refining routing logic.
