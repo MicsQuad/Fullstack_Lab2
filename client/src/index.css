@@ -66,3 +66,26 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+
+/* Table styling */
+table {
+  margin-left: auto;
+  margin-right: auto;
+  border-collapse: collapse;
+  width: 90%;
+  max-width: 1000px;
+}
+
+th, td {
+  border: 1px solid #ccc;
+  padding: 12px;
+  text-align: left;
+}
+
+thead {
+  background-color: #f3f3f3;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
